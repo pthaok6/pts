@@ -14,7 +14,7 @@ os.system('clear')
 
 aut='Bearer e2d8ea9e-95dd-4a5d-a8ce-adda36883a42'
 
-print('hello')
+print('kkk')
 
 #login
 
@@ -212,3 +212,4 @@ while (st.json()['success']==0):
 
 
   sleep(1.5)
+
