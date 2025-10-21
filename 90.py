@@ -6,15 +6,14 @@ from time import sleep;
 
 from datetime import timedelta
 
-os.system('git pull')
-
 os.system('clear')
+print('================================================')
+os.system('git pull')
+print('================================================')
 
 #aut=input('Author: ')
 
 aut='Bearer e2d8ea9e-95dd-4a5d-a8ce-adda36883a42'
-
-print('kkk')
 
 #login
 
@@ -212,4 +211,5 @@ while (st.json()['success']==0):
 
 
   sleep(1.5)
+
 
