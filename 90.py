@@ -26,9 +26,9 @@ def info():
 
   "leagueHot": "",
 
-  "searchBeginTime": "2025-10-29 16:00:00",
+  "searchBeginTime": "2025-10-30 16:00:00",
 
-  "searchEndTime": "2025-10-29 20:30:00",
+  "searchEndTime": "2025-10-30 20:30:00",
 
   "leagueId": []
 
@@ -101,7 +101,35 @@ for records in log.json()['data']['records']:
     print(f"{records['homeTeam']} vs {records['awayTeam']} - {records['date']} ID: {records['gameId']}")
 
     print('  ')
+ def balance():
+  jsbl={}
+  hdbl={
+  "method": "GET",
+  "authority": "90trades.com",
+  "path": "/soccer/member/credit",
+  "scheme": "https",
+  "sec-ch-ua-platform": "\"Android\"",
+  "authorization": "Bearer be13f535-9139-4da4-bafa-1058b8d41267",
+  "lang": "vi_VN",
+  "sec-ch-ua": "\"Google Chrome\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"",
+  "deviceplatform": "2",
+  "sec-ch-ua-mobile": "?1",
+  "appver": "1.23.35821",
+  "x-requested-with": "XMLHttpRequest",
+  "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36",
+  "accept": "*/*",
+  "sec-fetch-site": "same-origin",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "https://90trades.com/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "vi-VN,vi;q=0.9,id-ID;q=0.8,id;q=0.7,my-MM;q=0.6,my;q=0.5,en-GB;q=0.4,en;q=0.3,fr-FR;q=0.2,fr;q=0.1,en-US;q=0.1",
+  "cookie": "heauacea=e47b1922e5f8d721905ecc2683b63cfa",
+  "priority": "u=1, i"
+  }
+  return request.get('https://90trades.com/soccer/member/credit',json=jsbl,headers=hdbl)
 
+print('So du: ',balance().json()['data']['balance'])
 gameId=input('gameId: ')
 
 money=input('Money: ')
@@ -208,6 +236,7 @@ while (st.json()['success']==0):
 
 
   sleep(1.5)
+
 
 
 
