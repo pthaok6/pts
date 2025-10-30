@@ -10,7 +10,7 @@ os.system('clear')
 
 #aut=input('Author: ')
 
-aut='Bearer 768d4486-a1d8-4c30-a471-7j261ceaaf86e'
+aut='Bearer 297f224d-c411-4231-9e9c-396762d5ed90'
 
 #login
 
@@ -28,7 +28,7 @@ def info():
 
  headersinfo={
   "DevicePlatform": "3",
-  "Authorization": "Bearer c7adead2-2245-44f4-8512-98edc06763c1",
+  "Authorization": aut,
   "X-Requested-With": "XMLHttpRequest",
   "appver": "2.4.0",
   "lang": "vi_VN",
@@ -59,7 +59,7 @@ def balance():
   jsbl={}
   hdbl={
   "DevicePlatform": "3",
-  "Authorization": "Bearer c7adead2-2245-44f4-8512-98edc06763c1",
+  "Authorization":aut,
   "X-Requested-With": "XMLHttpRequest",
   "appver": "2.4.0",
   "lang": "vi_VN",
@@ -93,7 +93,7 @@ def stake():
 }
  hdst={
   "DevicePlatform": "3",
-  "Authorization": "Bearer c7adead2-2245-44f4-8512-98edc06763c1",
+  "Authorization": aut,
   "X-Requested-With": "XMLHttpRequest",
   "appver": "2.4.0",
   "lang": "vi_VN",
