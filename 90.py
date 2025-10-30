@@ -109,7 +109,7 @@ def balance():
   "path": "/soccer/member/credit",
   "scheme": "https",
   "sec-ch-ua-platform": "\"Android\"",
-  "authorization": "Bearer be13f535-9139-4da4-bafa-1058b8d41267",
+  "authorization": aut,
   "lang": "vi_VN",
   "sec-ch-ua": "\"Google Chrome\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"",
   "deviceplatform": "2",
@@ -236,6 +236,7 @@ while (st.json()['success']==0):
 
 
   sleep(1.5)
+
 
 
 
