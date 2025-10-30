@@ -127,7 +127,7 @@ def balance():
   "cookie": "heauacea=e47b1922e5f8d721905ecc2683b63cfa",
   "priority": "u=1, i"
   }
-  return request.get('https://90trades.com/soccer/member/credit',json=jsbl,headers=hdbl)
+  return requests.get('https://90trades.com/soccer/member/credit',json=jsbl,headers=hdbl)
 
 print('So du: ',balance().json()['data']['balance'])
 gameId=input('gameId: ')
@@ -236,6 +236,7 @@ while (st.json()['success']==0):
 
 
   sleep(1.5)
+
 
 
 
