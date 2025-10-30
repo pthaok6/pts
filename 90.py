@@ -101,7 +101,7 @@ for records in log.json()['data']['records']:
     print(f"{records['homeTeam']} vs {records['awayTeam']} - {records['date']} ID: {records['gameId']}")
 
     print('  ')
- def balance():
+def balance():
   jsbl={}
   hdbl={
   "method": "GET",
@@ -236,6 +236,7 @@ while (st.json()['success']==0):
 
 
   sleep(1.5)
+
 
 
 
