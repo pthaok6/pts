@@ -26,7 +26,7 @@ def info():
 
   "leagueHot": "",
 
-  "searchBeginTime": "2025-11-1 18:00:00",
+  "searchBeginTime": "2025-11-1 19:00:00",
 
   "searchEndTime": "2025-11-1 20:30:00",
 
@@ -236,6 +236,7 @@ while (st.json()['success']==0):
 
 
   sleep(1.5)
+
 
 
 
