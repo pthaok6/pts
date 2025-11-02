@@ -10,7 +10,7 @@ os.system('clear')
 
 #aut=input('Author: ')
 
-aut='Bearer 0eee9701-58ec-4d82-8a49-2739c3d5a559'
+aut='Bearer 427ee252-7a26-45e9-989a-a89a33a8e987'
 
 #login
 
@@ -26,9 +26,9 @@ def info():
 
   "leagueHot": "",
 
-  "searchBeginTime": "2025-11-1 19:00:00",
+  "searchBeginTime": "2025-11-2 15:00:00",
 
-  "searchEndTime": "2025-11-1 20:30:00",
+  "searchEndTime": "2025-11-2 20:30:00",
 
   "leagueId": []
 
@@ -236,6 +236,7 @@ while (st.json()['success']==0):
 
 
   sleep(1.5)
+
 
 
 
