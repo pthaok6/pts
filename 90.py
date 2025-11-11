@@ -92,7 +92,8 @@ def info():
 
 
 
-
+kA=1
+kA=input('0 to keep alive: ')
 
 log=info()
 
@@ -215,10 +216,6 @@ def stake():
  return requests.post('https://90trades.com//soccer/game/stake/create',headers=hdst,json=jsst)
 
 
-
-i=1
-i=input('0 to keep alive: ')
-
 st=stake()
 
 print(st.status_code)
@@ -235,13 +232,14 @@ while (st.json()['success']==0):
 
   print(st.json()['message'])
 
-  if (i): 
+  if (kA): 
    sleep(1.5)
   else:
    for i in range(3000,0,-1):
      print('keeping alive: ',i,end=' \r');
      i=i+1;
      sleep(1);
+
 
 
 
