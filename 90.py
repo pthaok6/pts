@@ -232,13 +232,14 @@ while (st.json()['success']==0):
 
   print(st.json()['message'])
 
-  if (kA): 
+  if (kA==1): 
    sleep(1.5)
   else:
    for i in range(3000,0,-1):
      print('keeping alive: ',i,end=' \r');
      i=i+1;
      sleep(1);
+
 
 
 
