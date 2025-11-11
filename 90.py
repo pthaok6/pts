@@ -93,7 +93,7 @@ def info():
 
 
 kA=1
-kA=input('0 to keep alive: ')
+kA=int(input('0 to keep alive: '))
 
 log=info()
 
@@ -239,6 +239,7 @@ while (st.json()['success']==0):
      print('keeping alive: ',i,end=' \r');
      i=i+1;
      sleep(1);
+
 
 
 
