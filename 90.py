@@ -26,9 +26,9 @@ def info():
 
   "leagueHot": "",
 
-  "searchBeginTime": "2025-11-10 16:00:00",
+  "searchBeginTime": "2025-11-11 16:00:00",
 
-  "searchEndTime": "2025-11-10 20:30:00",
+  "searchEndTime": "2025-11-11 20:30:00",
 
   "leagueId": []
 
@@ -216,7 +216,8 @@ def stake():
 
 
 
-
+i=1
+i=input('0 to keep alive: ')
 
 st=stake()
 
@@ -234,8 +235,14 @@ while (st.json()['success']==0):
 
   print(st.json()['message'])
 
+  if (i): 
+   sleep(1.5)
+  else:
+   for i in range(3000,0,-1):
+     print('keeping alive: ',i,end=' \r');
+      i=i+1;
+      sleep(1);
 
-  sleep(1.5)
 
 
 
