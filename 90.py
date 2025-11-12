@@ -23,23 +23,30 @@ def info():
 
 # tự động lấy ngày hiện tại
 
+ begin_dt = now_vn.replace(hour=16, minute=0, second=0, microsecond=0)
+
+ end_dt   = now_vn.replace(hour=20, minute=30, second=0, microsecond=0)
+
+
+
  js = {
 
-"pageSize": 20,
+    "pageSize": 20,
 
-"pageNo": 1,
+    "pageNo": 1,
 
-"guaranteed": -1,
+    "guaranteed": -1,
 
-"leagueHot":
+    "leagueHot": "",
 
-"searchBeginTime": f"{today} 16:00:00",
+    "searchBeginTime": begin_dt.strftime("%Y-%m-%d %H:%M:%S"),
 
-"searchEndTime": f"{today} 20:30:00",
+    "searchEndTime":   end_dt.strftime("%Y-%m-%d %H:%M:%S"),
 
-"leagueId": []
+    "leagueId": []
 
 }
+
 
  headersinfo={
 
@@ -245,6 +252,7 @@ while (st.json()['success']==0):
      sleep(1);
   else:
    sleep(1.5)
+
 
 
 
