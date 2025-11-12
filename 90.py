@@ -13,7 +13,8 @@ os.system('clear')
 aut='Bearer 4a0784e6-c513-4b4e-b833-1e4a98a838ba'
 
 # tạo múi giờ Việt Nam 
-vietnam_tz = timezone(timedelta(hours=7)) now_vn = datetime.now(vietnam_tz)
+vietnam_tz = timezone(timedelta(hours=7)) 
+now_vn = datetime.now(vietnam_tz)
 
 # định dạng yyyy-mm-dd 
 today = now_vn.strftime("%Y-%m-%d")
@@ -244,6 +245,7 @@ while (st.json()['success']==0):
      sleep(1);
   else:
    sleep(1.5)
+
 
 
 
