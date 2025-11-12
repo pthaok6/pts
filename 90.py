@@ -23,7 +23,7 @@ def info():
 
 # tự động lấy ngày hiện tại
 
-js = {
+ js = {
 
 "pageSize": 20,
 
@@ -245,6 +245,7 @@ while (st.json()['success']==0):
      sleep(1);
   else:
    sleep(1.5)
+
 
 
 
