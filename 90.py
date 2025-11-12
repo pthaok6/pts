@@ -10,27 +10,33 @@ os.system('clear')
 
 #aut=input('Author: ')
 
-aut='Bearer 57b85a4c-6d7b-459a-aa8e-8b38a79b7472'
+aut='Bearer 4a0784e6-c513-4b4e-b833-1e4a98a838ba'
 
-#login
+# tạo múi giờ Việt Nam 
+vietnam_tz = timezone(timedelta(hours=7)) now_vn = datetime.now(vietnam_tz)
+
+# định dạng yyyy-mm-dd 
+today = now_vn.strftime("%Y-%m-%d")
 
 def info():
 
- js={
+# tự động lấy ngày hiện tại
 
-  "pageSize": 20,
+js = {
 
-  "pageNo": 1,
+"pageSize": 20,
 
-  "guaranteed": -1,
+"pageNo": 1,
 
-  "leagueHot": "",
+"guaranteed": -1,
 
-  "searchBeginTime": "2025-11-11 16:00:00",
+"leagueHot":
 
-  "searchEndTime": "2025-11-11 20:30:00",
+"searchBeginTime": f"{today} 16:00:00",
 
-  "leagueId": []
+"searchEndTime": f"{today} 20:30:00",
+
+"leagueId": []
 
 }
 
@@ -238,6 +244,7 @@ while (st.json()['success']==0):
      sleep(1);
   else:
    sleep(1.5)
+
 
 
 
