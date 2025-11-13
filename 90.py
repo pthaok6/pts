@@ -25,7 +25,7 @@ def info():
 
  begin_dt = now_vn.replace(hour=16, minute=0, second=0, microsecond=0)
 
- end_dt   = now_vn.replace(hour=20, minute=30, second=0, microsecond=0)
+ end_dt   = now_vn.replace(hour=22, minute=30, second=0, microsecond=0)
 
 
 
@@ -252,6 +252,7 @@ while (st.json()['success']==0):
      sleep(1);
   else:
    sleep(1.5)
+
 
 
 
