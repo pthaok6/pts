@@ -10,7 +10,7 @@ os.system('clear')
 
 #aut=input('Author: ')
 
-aut='Bearer 4f1e7f7b-2e58-4e7a-be74-b63ba6730664'
+aut='Bearer f8db530d-96ed-4cb4-90f0-1ca97229ad2d'
 # tạo múi giờ Việt Nam 
 vietnam_tz = timezone(timedelta(hours=7)) 
 now_vn = datetime.now(vietnam_tz)
@@ -245,12 +245,13 @@ while (st.json()['success']==0):
   print(st.json()['message'])
 
   if (kA=='0'): 
-   for i in range(3000,0,-1):
+   for i in range(2000,0,-1):
      print('keeping alive: ',i,end=' \r');
      i=i+1;
      sleep(1);
   else:
    sleep(1.5)
+
 
 
 
