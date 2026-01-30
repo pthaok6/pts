@@ -10,7 +10,7 @@ os.system('clear')
 
 #aut=input('Author: ')
 
-aut='Bearer 0d403afe-b454-43c9-8a64-e089e9a491e4'
+aut='Bearer 16bc71b0-3336-405a-b06a-e15342b2cd03'
 # tạo múi giờ Việt Nam 
 vietnam_tz = timezone(timedelta(hours=7)) 
 now_vn = datetime.now(vietnam_tz)
@@ -251,6 +251,7 @@ while (st.json()['success']==0):
      sleep(1);
   else:
    sleep(1.5)
+
 
 
 
