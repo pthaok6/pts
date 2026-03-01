@@ -10,7 +10,7 @@ os.system('clear')
 
 #aut=input('Author: ')
 
-aut='Bearer 6e2053c2-c236-4e92-9648-aa53d6e5aff7'
+aut='Bearer 9c1dd220-0cfe-42ba-a8a2-4c4bf5b5c67a'
 # tạo múi giờ Việt Nam 
 vietnam_tz = timezone(timedelta(hours=7)) 
 now_vn = datetime.now(vietnam_tz)
@@ -22,7 +22,7 @@ def info():
 
 # tự động lấy ngày hiện tại
 
- begin_dt = now_vn.replace(hour=20, minute=0, second=0, microsecond=0)
+ begin_dt = now_vn.replace(hour=22, minute=0, second=0, microsecond=0)
 
  end_dt   = now_vn.replace(hour=22, minute=30, second=0, microsecond=0)
 
@@ -251,6 +251,7 @@ while (st.json()['success']==0):
      sleep(1);
   else:
    sleep(1.5)
+
 
 
 
