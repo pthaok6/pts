@@ -10,7 +10,7 @@ os.system('clear')
 
 #aut=input('Author: ')
 
-aut='Bearer 3ceda478-9b41-43ce-b673-5a2311665e3c'
+aut='Bearer 8dbcf96d-a0d7-4ba8-9821-322b038f61f3'
 # tạo múi giờ Việt Nam 
 vietnam_tz = timezone(timedelta(hours=7)) 
 now_vn = datetime.now(vietnam_tz)
