@@ -22,7 +22,7 @@ def info():
 
 # tự động lấy ngày hiện tại
 
- begin_dt = now_vn.replace(hour=20, minute=0, second=0, microsecond=0)
+ begin_dt = now_vn.replace(hour=22, minute=0, second=0, microsecond=0)
 
  end_dt   = now_vn.replace(hour=22, minute=30, second=0, microsecond=0)
 
